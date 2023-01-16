@@ -6,10 +6,7 @@ then use this directory to create a classifier and evaluate its performance,
 all out of box!
 
 In this example, we demonstrate how to use MLflow Recipes to build a model to predict whether
-a bottle of wine is red or white based on the wine's physicochemical properties.
-The example uses a dataset from the UCI Machine Learning Repository,
-presented in Modeling wine preferences by data mining from physicochemical properties
-[Cortez et al., 2009](https://www.sciencedirect.com/science/article/abs/pii/S0167923609001377).
+an IBM customer will churn or not. This is an open dataset that can be found [here](https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv)
 
 In this [notebook](notebooks/jupyter.ipynb) ([the Databricks version](notebooks/databricks.py)),
 we show how to build and evaluate a very simple classifier step by step,
@@ -19,7 +16,7 @@ you will learn how to use MLflow Recipes to
 - Ingest the raw source data.
 - Splits the dataset into training/validation/test.
 - Create an identity transformer and transform the dataset.
-- Train a linear model (classifier) to tell if a bottle of wine is red.
+- Train a linear model (classifier) to tell which customer may churn
 - Evaluate the trained model, and improve it by iterating through the `transform` and `train` steps.
 - Register the model for production inference.
 
