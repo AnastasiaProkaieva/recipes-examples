@@ -9,7 +9,7 @@ model_registry:
   # registry_uri: "sqlite:////tmp/registry.db"
   # FIXME::REQUIRED: Specifies the name of the Registered Model to use when registering a trained
   #                 model to the MLflow Model Registry.
-  model_name: "red_wine_classifier"
+  model_name: "churn_classifier"
 
 # Override the default train / validation / test dataset split ratios
 SPLIT_RATIOS: [0.80, 0.10, 0.10]
