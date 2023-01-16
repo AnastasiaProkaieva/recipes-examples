@@ -12,7 +12,7 @@
 
 recipe: "classification/v1"
 # Specifies the name of the column containing targets / labels for model training and evaluation
-target_col: "is_red"
+target_col: "churn"
 # Specifies the value of `target_col` which is considered the positive class: red wine in this case.
 positive_class: 1
 # Sets the primary metric to use to evaluate model performance. This primary metric is used

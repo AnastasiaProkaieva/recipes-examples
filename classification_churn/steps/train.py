@@ -5,7 +5,7 @@ This module defines the following routines used by the 'train' step:
   during training to produce a model recipe.
 """
 from typing import Dict, Any
-
+from xgboost import XGBClassifier
 
 def estimator_fn(estimator_params: Dict[str, Any] = None):
     """
@@ -17,4 +17,4 @@ def estimator_fn(estimator_params: Dict[str, Any] = None):
 
     if estimator_params is None:
         estimator_params = {}
-    return SGDClassifier(random_state=42, **estimator_params)
+    return XGBClassifier(random_state=42, **estimator_params)
