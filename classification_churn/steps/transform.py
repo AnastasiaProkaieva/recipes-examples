@@ -97,7 +97,7 @@ def transformer_fn():
     numerical_transformers_fn = numerical_prep()
     categorical_one_hot_transformers_fn = categorical_prep()
     
-    transformers = datetime_transformers_fn + numerical_transformers_fn + categorical_one_hot_transformers_fn
+    transformers = datetime_transformers_fn + numerical_transformers_fn + categorical_one_hot_transformers_fn 
 
     preprocessor = ColumnTransformer(transformers, remainder="passthrough", sparse_threshold=0)
     
@@ -106,3 +106,4 @@ def transformer_fn():
     ("preprocessor", preprocessor),
     ],
         verbose=True,)
+    

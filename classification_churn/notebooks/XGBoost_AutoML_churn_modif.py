@@ -27,6 +27,10 @@ display(spark.read.table("hive_metastore.dbdemos_lakehouse_churn_quentin_ambard_
 
 # COMMAND ----------
 
+
+
+# COMMAND ----------
+
 import mlflow
 import os
 import uuid
@@ -383,6 +387,25 @@ def objective(params):
 
 # COMMAND ----------
 
+part1 
+part2
+part3 
+
+
+Transoformation - Train -> learn - distribution 
+
+CV - Splits (random) on Train 
+
+
+CV -> splits (random)-> 
+Transformation (split)
+
+# COMMAND ----------
+
+
+
+# COMMAND ----------
+
 from sklearn.utils.class_weight import compute_class_weight
 def compute_weights(y_train):
     """
@@ -446,7 +469,7 @@ trials = SparkTrials()
 fmin(objective,
      space=space,
      algo=tpe.suggest,
-     max_evals=10,  # Increase this when widening the hyperparameter search space.
+     max_evals=250,  # Increase this when widening the hyperparameter search space.
      trials=trials)
 
 
